@@ -1,0 +1,111 @@
+.topNavigationBar {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  align-items: center;
+  display: flex;
+  font-size: clamp(0.1rem, 2vw, 0.8rem);
+  gap: 1rem;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .topNavigationBar-navItemContainer {
+    display: inline-flex;
+
+    .nav-links {
+      font-weight: bold;
+      border-left: 1px solid rgba($color: #f8f8f8, $alpha: 0.5);
+    }
+
+    .social-icons {
+      display: inline-flex;
+
+      .icons {
+        height: inherit;
+        display: grid;
+        place-content: center;
+        padding-left: 0.5rem;
+
+        svg {
+          width: 2em;
+          height: 2em;
+          fill: var(--white);
+        }
+      }
+    }
+  }
+
+  .topNavigationBar-accountContainer {
+    display: grid;
+    place-content: center;
+
+    .nav-links {
+      font-weight: bold;
+    }
+  }
+}
+
+.bottomNavigationBar {
+  align-items: center;
+  display: flex;
+  padding: 1.5em;
+  justify-content: space-between;
+
+  .bottomNavigationBar-navItemContainer {
+    display: inline-flex;
+
+    .nav-item {
+      padding-inline: 1rem;
+
+      .nav-links {
+        font-weight: 100;
+      }
+    }
+  }
+
+  .searchCartContainer {
+    align-items: center;
+    display: inline-flex;
+    place-content: center;
+
+    .iconContainer {
+      display: inline-flex;
+
+      svg {
+        height: 100%;
+        padding-inline: 1rem;
+      }
+
+      #productSearchBar {
+        border: none;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
+        display: flex;
+        font-size: 0.87em;
+        font-family: Helvetica, sans-serif;
+        outline: none;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.nav-item {
+  color: inherit;
+  display: grid;
+  font-family: Helvetica, sans-serif;
+  place-items: center;
+
+  .nav-links-brand {
+    padding-inline: 0;
+  }
+
+  .nav-links {
+    height: 100%;
+    color: inherit;
+    display: grid;
+    text-decoration: none;
+    padding-inline: 0.5rem;
+    place-content: center;
+  }
+}

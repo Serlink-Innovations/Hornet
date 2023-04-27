@@ -1,0 +1,30 @@
+.brand {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  object-fit: contain;
+  overflow: hidden;
+  padding-inline: 0.3rem;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.logo {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: var(--black);
+  color: var(--white);
+  display: grid;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 1px;
+  place-content: center;
+  padding: 0.6em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

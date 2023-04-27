@@ -1,0 +1,55 @@
+@import "assets/css/combined";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  overflow: hidden;
+  position: relative;
+  place-items: center start;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .hero-contentContainer {
+    color: var(--white);
+    bottom: 10em;
+    left: 7rem;
+    position: absolute;
+    z-index: 1;
+
+    h1 {
+      font-family: Helvetica, sans-serif;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  position: absolute;
+}
