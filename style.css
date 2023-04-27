@@ -88,6 +88,7 @@
 }
 .bottomNavigationBar .bottomNavigationBar-navItemContainer .nav-item .nav-links {
   font-weight: 100;
+  text-transform: uppercase;
 }
 .bottomNavigationBar .searchCartContainer {
   align-items: center;
