@@ -46,12 +46,14 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 998px) {
   .bottomNavigationBar {
     display: grid !important;
+    grid-template-columns: 1fr auto;
     grid-template-areas:
       "logo navHamburger"
-      "navItemContainer navItemContainer";
+      "navItemContainer navItemContainer"
+      "searchCartContainer searchCartContainer";
   }
 }
 
@@ -61,14 +63,21 @@
   padding: 1.5em;
   justify-content: space-between;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 998px) {
     .navHamburger {
       display: grid !important;
       grid-area: navHamburger;
     }
 
-    .bottomNavigationBar-navItemContainer {
+    .active {
       display: grid !important;
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+    .bottomNavigationBar-navItemContainer {
       grid-area: navItemContainer;
       margin-block: 1em;
 
@@ -86,6 +95,13 @@
         }
       }
     }
+
+    .searchCartContainer {
+      display: none !important;
+      justify-content: space-between !important;
+      margin-block: 1rem;
+      place-items: center !important;
+    }
   }
 
   .navHamburger {
@@ -93,6 +109,7 @@
     height: 3rem;
     background-color: inherit;
     border: none;
+    cursor: pointer;
     display: none;
     place-content: center;
 
@@ -118,6 +135,7 @@
   .searchCartContainer {
     align-items: center;
     display: inline-flex;
+    grid-area: searchCartContainer;
     place-content: center;
 
     .iconContainer {
