@@ -46,11 +46,61 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .bottomNavigationBar {
+    display: grid !important;
+    grid-template-areas:
+      "logo navHamburger"
+      "navItemContainer navItemContainer";
+  }
+}
+
 .bottomNavigationBar {
   align-items: center;
   display: flex;
   padding: 1.5em;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    .navHamburger {
+      display: grid !important;
+      grid-area: navHamburger;
+    }
+
+    .bottomNavigationBar-navItemContainer {
+      display: grid !important;
+      grid-area: navItemContainer;
+      margin-block: 1em;
+
+      .nav-item {
+        padding-block: 1rem;
+      }
+
+      .nav-item:hover {
+        background-color: var(--black);
+        color: var(--white);
+        transition: ease-in-out 500ms;
+
+        .nav-links {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .navHamburger {
+    width: 3rem;
+    height: 3rem;
+    background-color: inherit;
+    border: none;
+    display: none;
+    place-content: center;
+
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+  }
 
   .bottomNavigationBar-navItemContainer {
     display: inline-flex;
