@@ -112,6 +112,7 @@
     transition: ease-in-out 500ms;
   }
   .bottomNavigationBar .bottomNavigationBar-navItemContainer .nav-item:hover .nav-links {
+    font-weight: bold;
     transform: scale(1.2);
   }
   .bottomNavigationBar .searchCartContainer {
