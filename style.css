@@ -32,18 +32,19 @@
 .products {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .product {
-  max-width: 265px;
-  max-height: 265px;
+  max-width: inherit;
+  max-height: 400px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
   background-color: inherit;
+  color: var(--black);
   display: grid;
   font-weight: bold;
   font-family: sans-serif;
-  row-gap: 1em;
-  grid-template-areas: 3fr 1fr;
+  row-gap: 1rem;
   flex-direction: column;
   position: relative;
 }
@@ -53,21 +54,49 @@
   -o-object-fit: contain;
      object-fit: contain;
   overflow: hidden;
+  position: relative;
 }
-.product .product-condition {
+.product .product--content__container {
+  width: -webkit-fill-available;
+  box-shadow: 0px 0px 1.1px 0px rgb(0, 0, 0);
+  background-color: var(--white);
+  display: grid;
+  gap: 0.6rem;
+  position: absolute;
+  margin: 0.6rem;
+  padding: 0.6rem;
+  bottom: 0;
+}
+.product .product--content__container .product-condition {
   display: none;
 }
-.product .product-title {
+.product .product--content__container .product-title {
   flex-grow: 1;
   width: -webkit-fill-available;
-  color: rgba(0, 0, 0, 0.6705882353);
   bottom: 0;
-  font-size: clamp(0.4em, 3vw, 0.8em);
+  font-size: clamp(0.4rem, 3vw, 0.8rem);
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   text-transform: uppercase;
+}
+.product .product--content__container .product-price {
+  display: flex;
+  text-align: center;
+}
+.product .product--content__container .rating {
+  display: flex;
+}
+.product .product--content__container .rating .rating--star {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-content: center;
+}
+.product .product--content__container .rating .rating--star svg {
+  width: 100%;
+  height: 100%;
 }
 
 .product:hover {
@@ -75,7 +104,7 @@
   cursor: pointer;
 }
 .product:hover .product-condition {
-  width: inherit;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: inherit;
   color: #FFFFFF;
@@ -84,7 +113,7 @@
   letter-spacing: 1px;
   top: 0;
   text-align: center;
-  padding: 0.3em;
+  padding: 0.3rem;
 }
 
 /* .product::after {
@@ -94,11 +123,12 @@
     background-color: rgba($color: #000000, $alpha: 0.6);
     color: #e8e8e8;
     position: absolute;
-    padding: 0.6em;
+    padding: 0.6rem;
     bottom: 0;
     text-align: center;
 } */
 :root {
+  --accent: crimson;
   --white: #fff;
   --black: #000;
 }
