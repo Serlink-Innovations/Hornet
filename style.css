@@ -36,6 +36,10 @@
   .products .product {
     height: 50vh;
   }
+  .products .product .product-price {
+    display: flex !important;
+    text-align: center;
+  }
 }
 .products {
   display: grid;
@@ -90,7 +94,7 @@
   text-transform: uppercase;
 }
 .product .product--content__container .product-price {
-  display: flex;
+  display: none;
   text-align: center;
 }
 .product .product--content__container .rating {
@@ -124,6 +128,9 @@
   top: 0;
   text-align: center;
   padding: 0.3rem;
+}
+.product:hover .product-price {
+  display: flex;
 }
 
 :root {
