@@ -614,6 +614,11 @@ template {
   letter-spacing: 0.05em;
 }
 
+.content--header {
+  display: grid;
+  margin-block: 1em;
+}
+
 .title--large {
   display: flex;
   width: -moz-max-content;
@@ -735,6 +740,7 @@ html {
 body {
   min-height: 100%;
   font-family: Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 .hero {

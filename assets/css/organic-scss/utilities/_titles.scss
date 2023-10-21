@@ -1,3 +1,10 @@
+//Content Container Cuzomization
+.content--header {
+    display: grid;
+    margin-block: 1em;
+}
+
+//Title Customization
 .title--large {
     display: flex;
     width: max-content;
