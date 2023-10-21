@@ -18,6 +18,7 @@
     display: grid;
     gap: 0.625rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    mix-blend-mode: multiply;
 }
 
 .product {
@@ -98,17 +99,8 @@
     transition: ease-in-out 400ms;
     transform: scale(1.02);
 
-    .product-condition {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        cursor: inherit;
-        color: #FFFFFF;
-        display: grid;
-        position: absolute;
-        letter-spacing: 1px;
-        top: 0;
-        text-align: center;
-        padding: 0.3rem;
+    .product-img {
+        mix-blend-mode: multiply;
     }
 
     .product-price {
