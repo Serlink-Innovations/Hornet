@@ -1,0 +1,16 @@
+.title--large {
+    display: flex;
+    width: max-content;
+    font-weight: bold;
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.subtite--medium {
+    max-width: max-content;
+    color: rgba($color: #000000, $alpha: 0.3);
+    display: flex;
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
+    font-weight: bold;
+}
