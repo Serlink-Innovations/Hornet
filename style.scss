@@ -122,10 +122,19 @@ body {
         display: grid;
 
         li {
+          width: max-content;
           color: var(--white);
           list-style: none;
           list-style-type: none;
           padding-bottom: 0.6rem;
+          transition: 400ms ease-in-out;
+        }
+
+        li:hover {
+          cursor: pointer;
+          padding-left: 0.25rem;
+          text-decoration: underline;
+          text-underline-offset: 0.25rem;
         }
 
       }
