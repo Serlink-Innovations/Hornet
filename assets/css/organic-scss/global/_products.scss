@@ -16,7 +16,7 @@
 
 .products {
     display: grid;
-    gap: 0.625rem;
+    gap: 0.8rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin-block: 1rem;
 }
