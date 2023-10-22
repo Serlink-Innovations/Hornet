@@ -871,7 +871,7 @@ body {
 .footer .footer--contentContainer__bottom .footer--contentContainer__bottomSocial {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-block: 1rem;
 }
 .footer .footer--contentContainer__bottom .footer--contentContainer__bottomSocial .footer--bottomSocial__link {
   display: grid;
