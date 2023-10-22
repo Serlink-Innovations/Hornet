@@ -863,6 +863,7 @@ body {
   flex-wrap: wrap;
   margin-inline: 1rem;
   justify-content: space-between;
+  place-items: center;
 }
 .footer .footer--contentContainer__bottom label {
   padding-block: 1rem;
