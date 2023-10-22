@@ -180,6 +180,7 @@
   }
 }
 .bottomNavigationBar {
+  border-bottom: 1px solid;
   align-items: center;
   display: flex;
   padding: 1.5em;
